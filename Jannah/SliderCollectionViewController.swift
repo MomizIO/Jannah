@@ -19,12 +19,12 @@ class SliderCollectionViewController: BaseCollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(SliderCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        self.collectionView!.register(JannahCollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Prepare the model
         recipes = [
-            Recipe(withImageName: "1"),
-            Recipe(withImageName: "6")
+            Recipe(imageName: "1", title: "Tuna salad with bread and pasta", time: "3h 22min", calories: "240 Cals"),
+            Recipe(imageName: "2", title: "Potato and awesome tomato", time: "2h 7min", calories: "440 Cals")
         ]
     }
 
@@ -46,7 +46,7 @@ class SliderCollectionViewController: BaseCollectionViewController {
     // MARK: UICollectionViewDataSource
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? SliderCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as? JannahCollectionViewCell
     
         // Configure the cell
         cell?.recipe = recipes?[indexPath.row]
@@ -91,6 +91,13 @@ class SliderCollectionViewController: BaseCollectionViewController {
         return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
 }
 
 

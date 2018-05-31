@@ -9,9 +9,10 @@
 import Foundation
 
 struct Recipe {
-    let imageName: String
     
-    init(withImageName imageName: String) {
-        self.imageName = imageName
-    }
+    // MARK:- Properties
+    let imageName: String
+    let title: String
+    let time: String
+    let calories: String
 }
