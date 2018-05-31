@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		815E660B20BF089500B5F426 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E660A20BF089500B5F426 /* BaseCollectionViewController.swift */; };
+		815E660D20BF090F00B5F426 /* SliderCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815E660C20BF090F00B5F426 /* SliderCollectionViewController.swift */; };
+		8178ABC620BF5E1800D9D64D /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8178ABC520BF5E1800D9D64D /* BaseCollectionViewCell.swift */; };
+		8178ABC820BF5FA100D9D64D /* SliderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8178ABC720BF5FA100D9D64D /* SliderCollectionViewCell.swift */; };
 		81DF30C420BDFD57003CC098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DF30C320BDFD57003CC098 /* AppDelegate.swift */; };
-		81DF30C620BDFD57003CC098 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DF30C520BDFD57003CC098 /* ViewController.swift */; };
+		81DF30C620BDFD57003CC098 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81DF30C520BDFD57003CC098 /* MainViewController.swift */; };
 		81DF30C920BDFD57003CC098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81DF30C720BDFD57003CC098 /* Main.storyboard */; };
 		81DF30CC20BDFD57003CC098 /* Jannah.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81DF30CA20BDFD57003CC098 /* Jannah.xcdatamodeld */; };
 		81DF30CE20BDFD59003CC098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81DF30CD20BDFD59003CC098 /* Assets.xcassets */; };
 		81DF30D120BDFD59003CC098 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81DF30CF20BDFD59003CC098 /* LaunchScreen.storyboard */; };
+		81F7FC4420BF5CF200F065D8 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F7FC4320BF5CF200F065D8 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		815E660A20BF089500B5F426 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		815E660C20BF090F00B5F426 /* SliderCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewController.swift; sourceTree = "<group>"; };
+		8178ABC520BF5E1800D9D64D /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		8178ABC720BF5FA100D9D64D /* SliderCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCollectionViewCell.swift; sourceTree = "<group>"; };
 		81DF30C020BDFD57003CC098 /* Jannah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jannah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81DF30C320BDFD57003CC098 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		81DF30C520BDFD57003CC098 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		81DF30C520BDFD57003CC098 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		81DF30C820BDFD57003CC098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		81DF30CB20BDFD57003CC098 /* Jannah.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Jannah.xcdatamodel; sourceTree = "<group>"; };
 		81DF30CD20BDFD59003CC098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81DF30D020BDFD59003CC098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81DF30D220BDFD59003CC098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81F7FC4320BF5CF200F065D8 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +47,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		815E660920BF081000B5F426 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				81DF30CA20BDFD57003CC098 /* Jannah.xcdatamodeld */,
+				81DF30D220BDFD59003CC098 /* Info.plist */,
+				81DF30CF20BDFD59003CC098 /* LaunchScreen.storyboard */,
+				81DF30CD20BDFD59003CC098 /* Assets.xcassets */,
+				81DF30C320BDFD57003CC098 /* AppDelegate.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		81DF30B720BDFD57003CC098 = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +78,32 @@
 		81DF30C220BDFD57003CC098 /* Jannah */ = {
 			isa = PBXGroup;
 			children = (
-				81DF30C320BDFD57003CC098 /* AppDelegate.swift */,
-				81DF30C520BDFD57003CC098 /* ViewController.swift */,
+				81F7FC4220BF5C8D00F065D8 /* Model */,
+				81F7FC4520BF5DB200F065D8 /* View */,
 				81DF30C720BDFD57003CC098 /* Main.storyboard */,
-				81DF30CD20BDFD59003CC098 /* Assets.xcassets */,
-				81DF30CF20BDFD59003CC098 /* LaunchScreen.storyboard */,
-				81DF30D220BDFD59003CC098 /* Info.plist */,
-				81DF30CA20BDFD57003CC098 /* Jannah.xcdatamodeld */,
+				81DF30C520BDFD57003CC098 /* MainViewController.swift */,
+				815E660C20BF090F00B5F426 /* SliderCollectionViewController.swift */,
+				815E660A20BF089500B5F426 /* BaseCollectionViewController.swift */,
+				815E660920BF081000B5F426 /* Supporting Files */,
 			);
 			path = Jannah;
+			sourceTree = "<group>";
+		};
+		81F7FC4220BF5C8D00F065D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				81F7FC4320BF5CF200F065D8 /* Recipe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		81F7FC4520BF5DB200F065D8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8178ABC520BF5E1800D9D64D /* BaseCollectionViewCell.swift */,
+				8178ABC720BF5FA100D9D64D /* SliderCollectionViewCell.swift */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +177,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81DF30C620BDFD57003CC098 /* ViewController.swift in Sources */,
+				815E660D20BF090F00B5F426 /* SliderCollectionViewController.swift in Sources */,
+				8178ABC620BF5E1800D9D64D /* BaseCollectionViewCell.swift in Sources */,
+				81DF30C620BDFD57003CC098 /* MainViewController.swift in Sources */,
+				8178ABC820BF5FA100D9D64D /* SliderCollectionViewCell.swift in Sources */,
 				81DF30CC20BDFD57003CC098 /* Jannah.xcdatamodeld in Sources */,
+				81F7FC4420BF5CF200F065D8 /* Recipe.swift in Sources */,
 				81DF30C420BDFD57003CC098 /* AppDelegate.swift in Sources */,
+				815E660B20BF089500B5F426 /* BaseCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
